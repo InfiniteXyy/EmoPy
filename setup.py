@@ -31,8 +31,8 @@ setuptools.setup(
        'scikit-neuralnetwork>=0.7',
        'scipy==1.0.0',
        'tensorflow==1.13.1',
-       'opencv-python',
-       'h5py',
+       'opencv-python-headless==4.5.3.56',
+       'h5py==2.10.0',
        'pydot',
        'graphviz',
     ]
