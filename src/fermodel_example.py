@@ -1,12 +1,12 @@
 from EmoPy.src.fermodel import FERModel
 from pkg_resources import resource_filename
+import sys
 
 target_emotions = ['happiness', 'anger']
 model = FERModel(target_emotions, verbose=True)
 
-print('Predicting on happy image...')
-model.predict(resource_filename('src','image_data/happy.png'))
+# python fermodel_example.py a.png => the argv list will be ["fermodel_example.py", "a.png"]
+model.predict(resource_filename('src', "image_data/%s" % sys.argv[1]))
 
-print('Predicting on angry image...')
-model.predict(resource_filename('src','image_data/angry.png'))
+
 

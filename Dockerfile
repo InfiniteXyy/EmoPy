@@ -7,4 +7,5 @@ COPY . /app
 RUN pip install --upgrade pip setuptools wheel
 RUN pip install -r requirements.txt
 
-CMD ["python", "src/fermodel_example.py"]
+
+ENTRYPOINT ["python", "src/fermodel_example.py"]
